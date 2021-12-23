@@ -79,6 +79,7 @@ RUN cd /opt/t-crest/misc && \
     #echo "\nexport PATH=\$PATH:/opt/t-crest/local/bin" >> ~/.bashrc
 # Set Path variable for patmos tools
 ENV PATH=/opt/t-crest/local/bin:$PATH
+ENV TCRESTHOME=/opt/t-crest
 
 # Step 13: Build llvm
 RUN cd /opt/t-crest/misc && \
